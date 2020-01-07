@@ -3,6 +3,7 @@ package com.example.aarjugoyal.master_class_app;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -18,6 +19,8 @@ public class VenueActivity extends AppCompatActivity implements OnMapReadyCallba
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_venue);
+        Log.e("VenueActivty","My run reached here 0");
+
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -26,12 +29,17 @@ public class VenueActivity extends AppCompatActivity implements OnMapReadyCallba
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
+        Log.e("VenueActivty","My run reached here 1");
 
         Venue_Location = googleMap;
         Venue_Location.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+
+        Log.e("VenueActivty","My run reached here 2");
         // Add a marker in Sydney, Australia, and move the camera.
-        LatLng sydney = new LatLng(-34, 151);
-        Venue_Location.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        LatLng sydney = new LatLng(23.047690, 72.570412);
+        Venue_Location.addMarker(new MarkerOptions().position(sydney).title("Fortune Landmark Hotel"));
+
+        Log.e("VenueActivty","My run reached here 3");
         Venue_Location.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 }

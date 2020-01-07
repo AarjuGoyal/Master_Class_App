@@ -4,13 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorAccent"
     tools:context="com.example.aarjugoyal.master_class_app.VenueActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/Medium"
+        android:textAlignment="center"
+        android:text="Fortune Landmark, Ashram Rd, Shanti Nagar, Usmanpura, Ahmedabad, Gujarat 380013"
+        android:layout_gravity="center"/>
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="200dp"
-        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1" />
 </LinearLayout>
