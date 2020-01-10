@@ -22,15 +22,6 @@
         android:layout_marginVertical="10dp"
         />
     <Button
-        android:id="@+id/Button2"
-        android:layout_width="match_parent"
-        android:text="Book a Seat"
-        android:textSize="@dimen/Big"
-        android:background="@drawable/background1"
-        android:layout_height="60sp"
-        android:layout_marginVertical="10dp"
-        />
-    <Button
         android:id="@+id/Button3"
         android:layout_width="match_parent"
         android:text="Venue"
@@ -43,9 +34,11 @@
     <Button
         android:id="@+id/Button4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Program Schedule"
         android:textSize="@dimen/Big"
+        android:background="@drawable/background1"
+        android:layout_height="60sp"
+        android:layout_marginVertical="10dp"
         />
 
     </LinearLayout>

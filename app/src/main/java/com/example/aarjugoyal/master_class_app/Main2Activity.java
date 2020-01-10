@@ -26,7 +26,6 @@ public class Main2Activity extends AppCompatActivity {
         getSupportActionBar().setTitle("Home");
 
         addListenerOnButton1();
-        addListenerOnButton2();
         addListenerOnButton3();
         addListenerOnButton4();
 
@@ -43,22 +42,6 @@ public class Main2Activity extends AppCompatActivity {
 
                 Intent about_activity_Intent = new Intent(view.getContext(), AboutActivity.class);
                 view.getContext().startActivity(about_activity_Intent);
-
-            }
-        });
-    }
-
-    public void addListenerOnButton2()
-    {
-        b2 = (Button) findViewById(R.id.Button2);
-
-        b2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                System.out.println("Button Clicked");
-
-                Intent book_seat_Intent = new Intent(view.getContext(), BookSeatActivity.class);
-                view.getContext().startActivity(book_seat_Intent);
 
             }
         });
