@@ -36,7 +36,7 @@ public class VenueActivity extends AppCompatActivity implements OnMapReadyCallba
 
         Log.e("VenueActivty","My run reached here 2");
         // Add a marker in Sydney, Australia, and move the camera.
-        LatLng sydney = new LatLng(23.047690, 72.570412);
+        LatLng sydney = new LatLng(23.0476925, 72.5682);
         Venue_Location.addMarker(new MarkerOptions().position(sydney).title("Fortune Landmark Hotel"));
 
         Log.e("VenueActivty","My run reached here 3");

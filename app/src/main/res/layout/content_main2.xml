@@ -34,5 +34,13 @@
         android:textSize="@dimen/Big"
         />
 
+    <Button
+        android:id="@+id/Button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Program Schedule"
+        android:textSize="@dimen/Big"
+        />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

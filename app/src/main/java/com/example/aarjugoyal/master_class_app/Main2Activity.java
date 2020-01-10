@@ -27,6 +27,7 @@ public class Main2Activity extends AppCompatActivity {
         addListenerOnButton1();
         addListenerOnButton2();
         addListenerOnButton3();
+        addListenerOnButton4();
 
     }
 
@@ -72,6 +73,22 @@ public class Main2Activity extends AppCompatActivity {
                 System.out.println("Button Clicked");
 
                 Intent book_seat_Intent = new Intent(view.getContext(), VenueActivity.class);
+                view.getContext().startActivity(book_seat_Intent);
+
+            }
+        });
+    }
+
+    public void addListenerOnButton4()
+    {
+        b3 = (Button) findViewById(R.id.Button4);
+
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println("Button Clicked");
+
+                Intent book_seat_Intent = new Intent(view.getContext(), ScheduleActivity.class);
                 view.getContext().startActivity(book_seat_Intent);
 
             }

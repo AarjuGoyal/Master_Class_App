@@ -2,10 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.aarjugoyal.master_class_app">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -27,17 +27,16 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".BookSeatActivity" />
-        <activity android:name=".VenueActivity">
-
-        </activity>
+        <activity android:name=".VenueActivity"></activity>
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyASzR2hhJitLDQ9yPXEIR6ORVW4Gu7TFJU"/>
+            android:value="AIzaSyASzR2hhJitLDQ9yPXEIR6ORVW4Gu7TFJU" />
+
+        <activity android:name=".ScheduleActivity"></activity>
     </application>
 
 </manifest>
