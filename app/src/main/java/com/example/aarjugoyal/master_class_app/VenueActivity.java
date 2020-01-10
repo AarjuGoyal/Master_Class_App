@@ -3,6 +3,7 @@ package com.example.aarjugoyal.master_class_app;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -24,6 +25,9 @@ public class VenueActivity extends AppCompatActivity implements OnMapReadyCallba
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.venueToolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Location");
     }
 
     @Override
