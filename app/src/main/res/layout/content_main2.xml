@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:text="About"
         android:textSize="@dimen/Big"
-        android:background="@drawable/Dark_jute"
+        android:background="@drawable/background1"
         android:layout_height="60sp"
         android:layout_marginVertical="10dp"
         />
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:text="Book a Seat"
         android:textSize="@dimen/Big"
-        android:background="@drawable/Dark_jute"
+        android:background="@drawable/background1"
         android:layout_height="60sp"
         android:layout_marginVertical="10dp"
         />
@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:text="Venue"
         android:textSize="@dimen/Big"
-        android:background="@drawable/Dark_jute"
+        android:background="@drawable/background1"
         android:layout_height="60sp"
         android:layout_marginVertical="10dp"
         />
